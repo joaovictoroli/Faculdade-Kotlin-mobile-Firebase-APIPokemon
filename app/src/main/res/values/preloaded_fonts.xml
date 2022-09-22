@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/advent_pro_bold</item>
+        <item>@font/advent_pro_medium</item>
+        <item>@font/alegreya_sans_sc_thin</item>
+        <item>@font/antic_slab</item>
+        <item>@font/audiowide</item>
+        <item>@font/belgrano</item>
+        <item>@font/orbitron_black</item>
+        <item>@font/orbitron_bold</item>
+        <item>@font/orbitron_medium</item>
+        <item>@font/roboto</item>
+        <item>@font/roboto_thin</item>
+        <item>@font/vt323</item>
+    </array>
+</resources>

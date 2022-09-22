@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.login.cadastro.CadastroFragment">
+
+    <TextView
+        android:id="@+id/txtInfoCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="Cadastro"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTxtApelidoCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="50dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FBEDED"
+        android:ems="10"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:hint="Apelido"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="25dp"
+        android:checkedButton="@id/radiobuttonF"
+        android:orientation="horizontal"
+        android:scrollbarTrackHorizontal="?android:attr/listChoiceIndicatorSingle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtApelidoCadastro">>
+
+        <RadioButton
+            android:id="@+id/radioButtonM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/audiowide"
+            android:text="Masculino" />
+
+        <RadioButton
+            android:id="@+id/radiobuttonF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/audiowide"
+            android:selectAllOnFocus="false"
+            android:text="Ferminino"
+            android:textIsSelectable="false" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FBEDED"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:text="Genero:"
+        android:textColor="#090909"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroupGenero"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroupGenero"
+        app:layout_constraintStart_toStartOf="@+id/editTxtApelidoCadastro"
+        app:layout_constraintTop_toTopOf="@+id/radioGroupGenero" />
+
+    <EditText
+        android:id="@+id/editTxtEmailCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="25dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FBEDED"
+        android:ems="10"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupGenero" />
+
+    <EditText
+        android:id="@+id/editTxtSenhaCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="25dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FBEDED"
+        android:ems="10"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtEmailCadastro" />
+
+    <EditText
+        android:id="@+id/editTxtResenhaCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="25dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FBEDED"
+        android:ems="10"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:hint="Resenha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtSenhaCadastro" />
+
+    <Button
+        android:id="@+id/btnConfirmarCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#716363"
+        android:drawableRight="?attr/actionModePasteDrawable"
+        android:editable="false"
+        android:fontFamily="@font/roboto"
+        android:isScrollContainer="true"
+        android:text="CONFIRMAR"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#000000"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:iconGravity="textEnd"
+        app:iconTint="#9F7B7B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtResenhaCadastro"
+        app:rippleColor="#000000" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatBtnGotoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_revert"
+        app:layout_constraintBottom_toBottomOf="@+id/btnConfirmarCadastro"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroupGenero"
+        app:layout_constraintStart_toStartOf="@+id/editTxtResenhaCadastro"
+        app:layout_constraintTop_toTopOf="@+id/btnConfirmarCadastro" />
+
+    <ImageView
+        android:id="@+id/imgViewCadastro"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="25dp"
+        android:src="@drawable/treinadorf"
+        app:layout_constraintBottom_toTopOf="@+id/editTxtApelidoCadastro"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroupGenero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInfoCadastro" />
+
+    <TextView
+        android:id="@+id/txtInfoGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/belgrano"
+        android:text="Feminino"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/imgViewCadastro"
+        app:layout_constraintStart_toStartOf="@+id/imgViewCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewCadastro" />
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="screen"
+        app:layout_constraintEnd_toEndOf="@+id/divider10"
+        app:layout_constraintStart_toStartOf="@+id/divider9"
+        app:layout_constraintTop_toBottomOf="@+id/txtInfoGenero" />
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/black"
+        android:backgroundTintMode="screen"
+        app:layout_constraintBottom_toTopOf="@+id/imgViewCadastro"
+        app:layout_constraintEnd_toEndOf="@+id/divider10"
+        app:layout_constraintStart_toStartOf="@+id/divider9" />
+
+    <TextView
+        android:id="@+id/txtInfoApelidoCadastro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/belgrano"
+        android:gravity="center"
+        android:text="Apelido"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/divider10"
+        app:layout_constraintStart_toEndOf="@+id/imgViewCadastro"
+        app:layout_constraintTop_toTopOf="@+id/imgViewCadastro" />
+
+    <TextView
+        android:id="@+id/txtInfoEmailCadastro"
+        android:layout_width="0dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/belgrano"
+        android:gravity="center"
+        android:text="Email"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imgViewCadastro"
+        app:layout_constraintEnd_toStartOf="@+id/divider10"
+        app:layout_constraintStart_toEndOf="@+id/imgViewCadastro" />
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/black"
+        android:backgroundTintMode="screen"
+        app:layout_constraintBottom_toBottomOf="@+id/divider7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divider8" />
+
+    <View
+        android:id="@+id/divider10"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="25dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/black"
+        android:backgroundTintMode="screen"
+        app:layout_constraintBottom_toBottomOf="@+id/divider7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divider8" />
+
+    <TextView
+        android:id="@+id/txtInfoNada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="Dados, Ok?"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/divider7"
+        app:layout_constraintEnd_toEndOf="@+id/divider10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

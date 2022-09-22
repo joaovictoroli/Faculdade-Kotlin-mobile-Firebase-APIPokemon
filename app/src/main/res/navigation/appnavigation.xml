@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appnavigation"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/listPokemonFragment"
+        android:name="com.example.assessmentkotlin.ui.pokemon.ListPokemonFragment"
+        android:label="list_pokemon_fragment"
+        tools:layout="@layout/list_pokemon_fragment" >
+        <action
+            android:id="@+id/action_listPokemonFragment_to_showPokemonFragment"
+            app:destination="@id/showPokemonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showPokemonFragment"
+        android:name="com.example.assessmentkotlin.ui.pokemon.showpokemon.ShowPokemonFragment"
+        android:label="show_pokemon_fragment"
+        tools:layout="@layout/show_pokemon_fragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.assessmentkotlin.ui.profile.ProfileFragment"
+        android:label="profile_fragment"
+        tools:layout="@layout/profile_fragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_showPokemonFragment"
+            app:destination="@id/showPokemonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.assessmentkotlin.ui.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_listPokemonFragment"
+            app:destination="@id/listPokemonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroFragment"
+        android:name="com.example.assessmentkotlin.ui.login.cadastro.CadastroFragment"
+        android:label="cadastro_fragment"
+        tools:layout="@layout/cadastro_fragment" />
+</navigation>

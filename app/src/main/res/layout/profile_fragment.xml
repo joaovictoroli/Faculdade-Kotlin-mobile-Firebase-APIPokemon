@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <View
+        android:id="@+id/divider11"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="25dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="screen"
+        app:layout_constraintEnd_toStartOf="@+id/divider13"
+        app:layout_constraintStart_toEndOf="@+id/divider12"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider12"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="screen"
+        app:layout_constraintBottom_toBottomOf="@+id/divider14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divider11" />
+
+    <View
+        android:id="@+id/divider13"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="20dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="screen"
+        app:layout_constraintBottom_toBottomOf="@+id/divider14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divider11" />
+
+    <View
+        android:id="@+id/divider14"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="160dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="screen"
+        app:layout_constraintEnd_toStartOf="@+id/divider13"
+        app:layout_constraintStart_toEndOf="@+id/divider12"
+        app:layout_constraintTop_toBottomOf="@+id/divider11" />
+
+    <ImageView
+        android:id="@+id/imgViewTrainerProfile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/notfound"
+        app:layout_constraintBottom_toTopOf="@+id/imgViewGetFav"
+        app:layout_constraintStart_toStartOf="@+id/divider12" />
+
+    <TextView
+        android:id="@+id/txtProfileInfoApelido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/audiowide"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgViewTrainerProfile"
+        app:layout_constraintStart_toStartOf="@+id/imgViewTrainerProfile" />
+
+    <TextView
+        android:id="@+id/txtProfileInfoEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider13"
+        app:layout_constraintStart_toEndOf="@+id/imgViewTrainerProfile"
+        app:layout_constraintTop_toTopOf="@+id/txtProfileInfoApelido" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPokemon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewSortByPokedex" />
+
+    <ImageView
+        android:id="@+id/imgViewSortByPokedex"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/pokedex"
+        app:layout_constraintEnd_toStartOf="@+id/imgViewGetFav"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnSetupList"
+        app:layout_constraintTop_toBottomOf="@+id/divider14" />
+
+    <TextView
+        android:id="@+id/txtSortByFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="2dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Fav"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imgViewGetFav"
+        app:layout_constraintEnd_toStartOf="@+id/imgViewGetFav"
+        app:layout_constraintTop_toTopOf="@+id/imgViewGetFav" />
+
+    <ImageView
+        android:id="@+id/imgViewGetFav"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="6dp"
+        android:src="@drawable/fav"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewPokemon"
+        app:layout_constraintEnd_toEndOf="@+id/divider15"
+        app:layout_constraintTop_toTopOf="@+id/divider14" />
+
+    <View
+        android:id="@+id/divider15"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="screen"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewPokemon"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerViewPokemon"
+        app:layout_constraintStart_toStartOf="@+id/recyclerViewPokemon" />
+
+    <View
+        android:id="@+id/divider16"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:alpha="@dimen/material_emphasis_high_type"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="screen"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerViewPokemon"
+        app:layout_constraintStart_toStartOf="@+id/recyclerViewPokemon"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewPokemon" />
+
+    <View
+        android:id="@+id/divider17"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="screen"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerViewPokemon"
+        app:layout_constraintStart_toEndOf="@+id/recyclerViewPokemon"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewGetFav" />
+
+    <View
+        android:id="@+id/divider18"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="screen"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerViewPokemon"
+        app:layout_constraintEnd_toStartOf="@+id/recyclerViewPokemon"
+        app:layout_constraintTop_toTopOf="@+id/recyclerViewPokemon" />
+
+    <TextView
+        android:id="@+id/txtInfoFav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:autoText="false"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="Time incompleto"
+        android:textAlignment="textEnd"
+        android:textColor="#0C0C0C"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgViewGetFav"
+        app:layout_constraintEnd_toEndOf="@+id/divider14" />
+
+    <ImageButton
+        android:id="@+id/imgBtnAsc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:background="#FFFEFE"
+        android:rotation="270"
+        android:src="@drawable/abc_vector_test"
+        android:tint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imgViewSortByPokedex"
+        app:layout_constraintStart_toEndOf="@+id/imgViewSortByPokedex"
+        app:layout_constraintTop_toTopOf="@+id/imgViewSortByPokedex" />
+
+    <ImageButton
+        android:id="@+id/imgBtnDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:background="#FFFFFF"
+        android:rotation="90"
+        android:src="@drawable/abc_vector_test"
+        android:tint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imgViewSortByPokedex"
+        app:layout_constraintEnd_toStartOf="@+id/imgViewSortByPokedex"
+        app:layout_constraintTop_toTopOf="@+id/imgViewSortByPokedex" />
+
+    <ImageView
+        android:id="@+id/imgViewPokemonFav1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/notfound"
+        app:layout_constraintBottom_toBottomOf="@+id/imgViewPokemonFav2"
+        app:layout_constraintEnd_toStartOf="@+id/imgViewPokemonFav2"
+        app:layout_constraintStart_toEndOf="@+id/imgViewTrainerProfile" />
+
+    <ImageView
+        android:id="@+id/imgViewPokemonFav2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/notfound"
+        app:layout_constraintBottom_toTopOf="@+id/imgViewPokemonFav5"
+        app:layout_constraintEnd_toStartOf="@+id/divider13"
+        app:layout_constraintStart_toEndOf="@+id/imgViewTrainerProfile" />
+
+    <ImageView
+        android:id="@+id/imgViewPokemonFav3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/notfound"
+        app:layout_constraintBottom_toBottomOf="@+id/imgViewPokemonFav2"
+        app:layout_constraintEnd_toStartOf="@+id/divider13"
+        app:layout_constraintStart_toEndOf="@+id/imgViewPokemonFav2" />
+
+    <ImageView
+        android:id="@+id/imgViewPokemonFav4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/notfound"
+        app:layout_constraintBottom_toBottomOf="@+id/imgViewPokemonFav5"
+        app:layout_constraintEnd_toStartOf="@+id/imgViewPokemonFav5"
+        app:layout_constraintStart_toEndOf="@+id/imgViewTrainerProfile" />
+
+    <ImageView
+        android:id="@+id/imgViewPokemonFav5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/notfound"
+        app:layout_constraintBottom_toTopOf="@+id/txtInfoFav"
+        app:layout_constraintEnd_toStartOf="@+id/divider13"
+        app:layout_constraintStart_toEndOf="@+id/imgViewTrainerProfile" />
+
+    <ImageView
+        android:id="@+id/imgViewPokemonFav6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/notfound"
+        app:layout_constraintBottom_toBottomOf="@+id/imgViewPokemonFav5"
+        app:layout_constraintEnd_toStartOf="@+id/divider13"
+        app:layout_constraintStart_toEndOf="@+id/imgViewPokemonFav5" />
+
+    <ImageButton
+        android:id="@+id/imgBtnSetupList"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:backgroundTint="#683D3D"
+        android:src="@android:drawable/ic_menu_sort_by_size"
+        app:layout_constraintBottom_toBottomOf="@+id/divider15"
+        app:layout_constraintStart_toStartOf="@+id/divider15" />
+
+    <TextView
+        android:id="@+id/txtListar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Listar"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBtnSetupList"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnSetupList"
+        app:layout_constraintTop_toTopOf="@+id/imgBtnSetupList" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

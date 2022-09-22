@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="#000000"
+    android:backgroundTintMode="screen"
+    android:hapticFeedbackEnabled="true"
+    tools:context=".ui.login.LoginFragment">
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/press_start_2p"
+        android:text="KOTLIN"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTxtLoginEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTxtLoginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FBEDED"
+        android:ems="10"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <EditText
+        android:id="@+id/editTxtLoginSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="25dp"
+        android:background="#FFFEFE"
+        android:backgroundTint="#FBEDED"
+        android:ems="10"
+        android:fontFamily="@font/roboto_thin"
+        android:gravity="center"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtLoginEmail" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="25dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="screen"
+        app:layout_constraintBottom_toTopOf="@+id/editTxtLoginEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatLogar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_send"
+        app:backgroundTint="#D3C5C5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtInfo"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtLoginSenha" />
+
+    <Button
+        android:id="@+id/btnGotoCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#716363"
+        android:fontFamily="@font/roboto"
+        android:text="Cadastrar"
+        android:textColor="#090909"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#000000"
+        android:textIsSelectable="false"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:icon="?attr/actionModeCopyDrawable"
+        app:iconPadding="2dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/floatLogar"
+        app:layout_constraintEnd_toStartOf="@+id/floatLogar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/floatLogar"
+        app:rippleColor="#000000" />
+
+    <TextView
+        android:id="@+id/txtInfoApi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text='"https://pokeapi.co/api/v2/"'
+        android:textColor="#000000"
+        android:textSize="11sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="screen"
+        app:layout_constraintBottom_toTopOf="@+id/txtInfoNome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtInfoNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/advent_pro_bold"
+        android:text="João Victor de Oliveira l ADS"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/txtInfoApi"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtInfoAssessment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="Assessment"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
